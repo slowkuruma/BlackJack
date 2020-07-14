@@ -27,6 +27,12 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  button:hover {
+      cursor: pointer;
+      transition: 1s;
+      transform: scale(1.2);
+  }
   
   .rules {
     text-align: center;
