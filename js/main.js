@@ -71,7 +71,7 @@ function calculateScore(hand) {
 
 
 
-//Deal function
+
 
 //checkScore function
 
