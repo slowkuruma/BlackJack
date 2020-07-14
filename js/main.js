@@ -1,5 +1,15 @@
 //Define variables
 
+const player = "You";
+const dealer = "Dealer";
+
+let playerHand = [];
+let dealerHand = [];
+
+let pScore = 0;
+let dScore = 0;
+
+
 //Define DOM elements
 
 //Game
