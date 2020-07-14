@@ -1,0 +1,33 @@
+
+body {
+    background-color: darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .dealer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .player {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .buttons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rules {
+    text-align: center;
+  }
