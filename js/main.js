@@ -62,7 +62,7 @@ function calculateScore(hand) {
     }
     return score;
 }
-
+checkForWinner();
 //Adds a card to the player's hand
 function hit() {
     playerHand.push(deck.pop());

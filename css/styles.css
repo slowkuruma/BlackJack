@@ -1,6 +1,6 @@
 
 body {
-    background-color: darkgreen;
+    background-color: rgb(9, 65, 9);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   }
@@ -8,6 +8,7 @@ body {
   
 h1 {
     text-align: center;
+    text-shadow: 2px 2px 5px green;
   }
   
 .dealer {
@@ -15,12 +16,15 @@ h1 {
     justify-content: center;
     text-align: center;
     height: 300px;
+    text-shadow: 2px 2px 5px green;
   }
+
 .player {
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 300px;
+    text-shadow: 2px 2px 5px green;
   }
   
   .buttons {
@@ -38,4 +42,7 @@ h1 {
   
   .rules {
     text-align: center;
+    text-shadow: 1px 1px 20px green;
+    font-weight: 900;
+    color: black;
   }
