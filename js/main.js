@@ -1,5 +1,5 @@
-console.log("It Works");
-console.log("helloworld");
+
+console.log("Hello World");
 
 
 
@@ -18,6 +18,10 @@ let dScore = 0;
 
 //Define DOM elements
 
+const dealerScoreID = document.getElementById("dealer-score");
+const playerScoreID = document.getElementById("player-score");
+const dealerHandID = document.getElementById("dealer-hand");
+const playerHandID = document.getElementById("player-hand");
 const winnerID = document.getElementById("winner");
 const hitID = document.getElementById("hit");
 const stayID = document.getElementById("stay");
