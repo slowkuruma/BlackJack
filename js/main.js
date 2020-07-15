@@ -1,5 +1,7 @@
-console.log("Working");
+console.log("Hello, World");
 
+
+//Define variables
 const dealer = "Dealer";
 const player = "You";
 const tie = "tie";
@@ -9,6 +11,8 @@ let iswinner = null;
 let pScore = 0;
 let dScore = 0;
 
+
+//Define DOM elements
 const dealerScoreID = document.getElementById("dealer-score");
 const playerScoreID = document.getElementById("player-score");
 const dealerHandID = document.getElementById("dealer-hand");
@@ -18,6 +22,7 @@ const hitID = document.getElementById("hit");
 const stayID = document.getElementById("stay");
 const resetID = document.getElementById("reset");
 
+//Shuffle
 //Fisher-Yate's algorithm
 function shuffle(deck) {
     let i = 0,
@@ -31,7 +36,7 @@ function shuffle(deck) {
     }
 }
 
-//gives 2 cards to the dealer and player at the start
+//Gives 2 cards to the dealer and player at the start
 function initialHand() {
     shuffle(deck);
     for (let i = 0; i < 2; i++) {
@@ -41,7 +46,7 @@ function initialHand() {
     return playerHand, dealerHand;
 }
 
-//calculates the score
+//Calculates the score
 function calculateScore(hand) {
     let score = 0;
     let aces = 0;
@@ -58,7 +63,7 @@ function calculateScore(hand) {
     return score;
 }
 
-//adds a card to the player's hand
+//Adds a card to the player's hand
 function hit() {
     playerHand.push(deck.pop());
     pScore = calculateScore(playerHand);
@@ -70,7 +75,7 @@ function hit() {
     playerScoreID.innerHTML = "Score: " + pScore;
 }
 
-//function if player is content with their hand
+//Function if player is content with their hand
 function stay() {
     dScore = calculateScore(dealerHand);
     pScore = calculateScore(playerHand);
@@ -92,7 +97,7 @@ function stay() {
     checkForWinner();
 }
 
-//renders cards
+//Renders cards
 function render() {
     dealerHandID.innerHTML = "";
     dealerHand.forEach((card, idx) => {
@@ -108,7 +113,7 @@ function render() {
     });
 }
 
-// checks for winner
+// Checks for winner
 function checkForWinner() {
     if (iswinner !== null) {
         if (iswinner == player) {
@@ -125,29 +130,29 @@ function checkForWinner() {
     }
 }
 
-//styles the button to be hidden when there is a winner
+//Styles the button to be hidden when there is a winner
 function hide() {
     hitID.style.visibility = "hidden";
     stayID.style.visibility = "hidden";
 }
 
-//styles reset button to be hidden when the game is on.
+//Styles reset button to be hidden when the game is on.
 function hideResetBtn() {
     resetID.style.visibility = "hidden";
 }
 
-//styles reset button to show when winner is found.
+//Styles reset button to show when winner is found.
 function showResetBtn() {
     resetID.style.visibility = "visible";
 }
 
-//shows hit and stay buttons once player hits reset
+//Shows hit and stay buttons once player hits reset
 function showBtns() {
     hitID.style.visibility = "visible";
     stayID.style.visibility = "visible";
 }
 
-//clears the scores of the previous game if player hit reset button
+//Clears the scores of the previous game if player hit reset button
 function clearScores() {
     dealerScoreID.innerHTML = "Score:";
     playerScoreID.innerHTML = "Score:";
@@ -159,12 +164,12 @@ function startGame() {
     render();
     calculateScore(dealerHand);
     calculateScore(playerHand);
-    //checkForWinner();
+
 }
 
 startGame();
 
-//event listeners
+//Event listeners
 
 let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function (e) {
