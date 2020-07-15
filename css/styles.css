@@ -2,19 +2,21 @@
 body {
     background-color: darkgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
   }
-  h1 {
+  
+  
+h1 {
     text-align: center;
   }
   
-  .dealer {
+.dealer {
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 300px;
   }
-  
-  .player {
+.player {
     align-items: center;
     justify-content: center;
     text-align: center;
