@@ -187,5 +187,3 @@ resetButton.addEventListener("click", function (e) {
     showBtns();
 });
 
-
-
