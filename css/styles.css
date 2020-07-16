@@ -29,11 +29,12 @@ h1 {
   
   .buttons {
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     justify-content: center;
     border-radius: 40px;
     font-size: 16px;
+    
   }
 
   button:hover {
