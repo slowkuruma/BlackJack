@@ -12,6 +12,11 @@ Dealer deals 2 cards to player/players and also 2 for themselves. The goal of th
   * CSS
   * Javascript
 
-Getting Started:
+### Getting Started:
 
-Images:
+### Images: ![Game Start](ScreenShots/Capture.PNG)
+
+![winner](ScreenShots/Capture2.PNG)
+
+![loser](ScreenShots/Capture1.PNG)
+
