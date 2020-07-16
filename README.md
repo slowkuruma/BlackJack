@@ -21,9 +21,10 @@ Dealer deals 2 cards to player/players and also 2 for themselves. The goal of th
 ![loser](ScreenShots/Capture1.PNG)
 
 
+---------------------------------------------
+
 #### Future updates
 
----------------------------------------------
  
  * Betting System
  * Double Down 
