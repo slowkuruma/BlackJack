@@ -114,21 +114,25 @@ function render() {
     });
 }
 
-//Checks for winner
+//Checks for winner (not the prettiest but it works)
 function checkForWinner() {
-    if (iswinner !== null) {
-        if (iswinner == player) {
-            winnerID.innerHTML = "Congrats! You won.";
-        } else if (iswinner == dealer) {
-            winnerID.innerHTML = "Sorry, you lost :(";
-        } else if (iswinner == tie) {
-            winnerID.innerHTML = "It's a tie!";
-        }
-        playerScoreID.innerHTML = "Score: " + pScore;
-        dealerScoreID.innerHTML = "Score: " + dScore;
-        hide();
-        showResetBtn();
+    let playerScore = calculateScore(playerHand)
+    if (playerScore == 21) {
+        iswinner = player
+        if (iswinner !== null) {
+            if (iswinner == player) {
+                winnerID.innerHTML = "Congrats! You won.";
+            } else if (iswinner == dealer) {
+                winnerID.innerHTML = "Sorry, you lost :(";
+            } else if (iswinner == tie) {
+                winnerID.innerHTML = "It's a tie!";
+            }
+            playerScoreID.innerHTML = "Score: " + pScore;
+            dealerScoreID.innerHTML = "Score: " + dScore;
+            hide();
+            showResetBtn();
 
+        }
 
 
     }
@@ -167,22 +171,12 @@ function startGame() {
     console.log("resethidden");
     initialHand();
     render();
-
-    let playerScore = calculateScore(playerHand)
-
-    if (playerScore === 21) {
-        iswinner = player
+    checkForWinner();
 
 
+};
 
 
-
-        checkForWinner();
-
-
-    };
-
-}
 
 startGame();
 
