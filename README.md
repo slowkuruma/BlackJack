@@ -12,7 +12,7 @@ Dealer deals 2 cards to player/players and also 2 for themselves. The goal of th
   * CSS
   * Javascript
 
-### Getting Started:
+### Getting Started: [Click here to play](https://slowkuruma.github.io/BlackJack/)
 
 ### Images: 
 
