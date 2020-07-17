@@ -14,11 +14,20 @@ Dealer deals 2 cards to player/players and also 2 for themselves. The goal of th
 
 ### Getting Started:
 
-### Images: ![Game Start](ScreenShots/Capture.PNG)
+### Images: 
+
+![Game Start](ScreenShots/Capture.PNG)
 
 ![winner](ScreenShots/Capture2.PNG)
 
 ![loser](ScreenShots/Capture1.PNG)
+
+#### WireFrame:
+
+![Wireframe1](ScreenShots/20200713_170759.jpg)
+
+![Wireframe2](ScreenShots/20200713_170814.jpg)
+
 
 
 ---------------------------------------------
