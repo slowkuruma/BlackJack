@@ -1,4 +1,4 @@
-console.log("Hello, World");
+
 
 
 //Define variables
@@ -168,7 +168,6 @@ function clearScores() {
 
 function startGame() {
     hideResetBtn();
-    console.log("resethidden");
     initialHand();
     render();
     checkForWinner();
