@@ -22,6 +22,7 @@ const hitID = document.getElementById("hit");
 const stayID = document.getElementById("stay");
 const resetID = document.getElementById("reset");
 
+
 //Shuffle
 //Fisher-Yate's algorithm
 function shuffle(deck) {
@@ -113,7 +114,7 @@ function render() {
     });
 }
 
-// Checks for winner
+//Checks for winner
 function checkForWinner() {
     if (iswinner !== null) {
         if (iswinner == player) {
@@ -127,6 +128,9 @@ function checkForWinner() {
         dealerScoreID.innerHTML = "Score: " + dScore;
         hide();
         showResetBtn();
+
+
+
     }
 }
 
@@ -160,17 +164,30 @@ function clearScores() {
 
 function startGame() {
     hideResetBtn();
+    console.log("resethidden");
     initialHand();
     render();
-    calculateScore(dealerHand);
-    calculateScore(playerHand);
-    checkForWinner();
+
+    let playerScore = calculateScore(playerHand)
+
+    if (playerScore === 21) {
+        iswinner = player
+
+
+
+
+
+        checkForWinner();
+
+
+    };
 
 }
 
 startGame();
 
-//Event listeners
+
+//event listeners
 
 let hitButton = document.getElementById("hit");
 hitButton.addEventListener("click", function (e) {
