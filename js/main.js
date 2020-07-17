@@ -116,27 +116,26 @@ function render() {
 
 //Checks for winner (not the prettiest but it works)
 function checkForWinner() {
-    let playerScore = calculateScore(playerHand)
-    if (playerScore == 21) {
-        iswinner = player
-        if (iswinner !== null) {
-            if (iswinner == player) {
-                winnerID.innerHTML = "Congrats! You won.";
-            } else if (iswinner == dealer) {
-                winnerID.innerHTML = "Sorry, you lost :(";
-            } else if (iswinner == tie) {
-                winnerID.innerHTML = "It's a tie!";
-            }
-            playerScoreID.innerHTML = "Score: " + pScore;
-            dealerScoreID.innerHTML = "Score: " + dScore;
-            hide();
-            showResetBtn();
 
+
+    if (iswinner !== null) {
+        if (iswinner == player) {
+            winnerID.innerHTML = "Congrats! You won.";
+        } else if (iswinner == dealer) {
+            winnerID.innerHTML = "Sorry, you lost :(";
+        } else if (iswinner == tie) {
+            winnerID.innerHTML = "It's a tie!";
         }
-
+        playerScoreID.innerHTML = "Score: " + pScore;
+        dealerScoreID.innerHTML = "Score: " + dScore;
+        hide();
+        showResetBtn();
 
     }
+
+
 }
+
 
 //Styles the button to be hidden when there is a winner
 function hide() {
@@ -170,9 +169,8 @@ function startGame() {
     hideResetBtn();
     initialHand();
     render();
+
     checkForWinner();
-
-
 };
 
 
